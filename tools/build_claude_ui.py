@@ -437,8 +437,6 @@ mark {{ background: var(--mark); color: inherit; border-radius: 2px; padding: 0 
   <a href="https://renqing.21212121.xyz/" target="_blank">🤝 《人情世故指南》</a>
   <span>·</span>
   <span class="cur">❤️ 《如何与女生相处》</span>
-  <span>·</span>
-  <a href="/tree/" target="_blank" style="margin-left:auto;">🌸 恋爱时光纪念馆 (爱心树) ↗</a>
 </div>
 
 <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
@@ -497,8 +495,6 @@ mark {{ background: var(--mark); color: inherit; border-radius: 2px; padding: 0 
     <footer class="footer">
       <div class="footer-links">
         <a href="阅读全文.html">阅读全文长文版</a>
-        <span>·</span>
-        <a href="/tree/">爱心树纪念馆</a>
         <span>·</span>
         <a href="https://github.com/xiaobai5211314/HowToGetAlongWithGirls" target="_blank" rel="noopener">GitHub 仓库</a>
         <span>·</span>
@@ -1090,8 +1086,7 @@ h1 {{ font-family: var(--font-serif); font-size: 28px; margin: 0 0 10px; }}
 def generate_sitemap(entries):
     urls = [
         '<url><loc>https://love.21212121.xyz/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>',
-        '<url><loc>https://love.21212121.xyz/阅读全文.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>',
-        '<url><loc>https://love.21212121.xyz/tree/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>'
+        '<url><loc>https://love.21212121.xyz/阅读全文.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>'
     ]
     for e in entries:
         urls.append(f'<url><loc>https://love.21212121.xyz/#entry-{e["id"]}</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>')
