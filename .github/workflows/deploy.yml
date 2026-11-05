@@ -35,11 +35,9 @@ jobs:
           python tools/build_claude_ui.py
 
       - name: 配置 SSH 密钥
-        env:
-          SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
         run: |
           mkdir -p ~/.ssh
-          printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key
+          echo "${{ secrets.SERVER_SSH_KEY_B64 }}" | base64 -d > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -p ${{ secrets.SERVER_PORT || 22 }} -H "${{ secrets.SERVER_HOST }}" >> ~/.ssh/known_hosts
 
