@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://love.21212121.xyz/sitemap.xml
