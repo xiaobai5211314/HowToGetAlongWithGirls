@@ -622,7 +622,7 @@ const CORPUS = {corpus_json};
 
   function formatXrefs(text) {{
     if (!text) return '';
-    return escapeHtml(text).replace(/(?:见|参考|详见)\s*([0-9]+\.[0-9]+)/g, (match, id) => {{
+    return escapeHtml(text).replace(/(?:见|参考|详见)\\s*([0-9]+\\.[0-9]+)/g, (match, id) => {{
       return `<a href="#entry-${{id}}" class="xref" data-ref="${{id}}">${{match}}</a>`;
     }});
   }}
@@ -720,7 +720,7 @@ const CORPUS = {corpus_json};
     const stages = state.stages;
     const scenes = state.scenes;
 
-    const tokens = q ? q.split(/\s+/).filter(Boolean) : [];
+    const tokens = q ? q.split(/\\s+/).filter(Boolean) : [];
     let matchCount = 0;
 
     const cards = cardsContainer.querySelectorAll('.card');
@@ -1096,9 +1096,10 @@ def generate_sitemap(entries):
     for e in entries:
         urls.append(f'<url><loc>https://love.21212121.xyz/#entry-{e["id"]}</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>')
     
+    url_items = "\n".join(urls)
     return f'''<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{"\n".join(urls)}
+{url_items}
 </urlset>
 '''
 
