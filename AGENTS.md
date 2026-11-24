@@ -11,6 +11,10 @@
 - **独立域名**：主域名 `https://love.21212121.xyz`
 - **联动导航**：顶部固定提供前往兄弟项目《高性价比人生指南》（`https://rensheng.21212121.xyz/`）与《人情世故指南》（`https://renqing.21212121.xyz/`）的三部曲联动导航，以及恋爱时光纪念馆彩蛋（`https://love.21212121.xyz/tree/`）。
 - **独立开源仓库**：`https://github.com/xiaobai5211314/HowToGetAlongWithGirls`
+- **开源溯源与上游端点**：
+  - 核心 Agent 技能包与恋爱教练方法论源自开源项目：[`Mayuqi-crypto/HowToGetAlongWithGirls`](https://github.com/Mayuqi-crypto/HowToGetAlongWithGirls)（Git 远端别名：`upstream`，主分支：`master`）。
+  - 本项目在此基础上全量集成并演进 `skills/dating-coach`（含 13 个决策与现实评估模块），并扩展构建了 10 个系统化章节的 Markdown 电子书与 Claude UI 交互式在线检索站。
+  - 上游对齐方式：支持通过 `git fetch upstream` 对齐上游技能与参考库更新。
 
 ## 2. 界面与交互设计（Claude 官方 UI 主题）
 - **色彩体系**：

@@ -62,6 +62,11 @@ python tools/build_claude_ui.py
 python tools/make_icons.py
 ```
 
+## 🤝 开源致谢与上游溯源
+
+- 本项目的核心 Agent 技能包与恋爱教练决策模型溯源自开源项目：[`Mayuqi-crypto/HowToGetAlongWithGirls`](https://github.com/Mayuqi-crypto/HowToGetAlongWithGirls)（Git 远端别名：`upstream`）。
+- 感谢原作者贡献的高质量 Dating Coach 智能体规约与现实决策模块。
+
 ## 📄 开源许可证
 
 本项目基于 [MIT License](LICENSE) 开源。
